@@ -18,7 +18,9 @@ const InfoUser = ({
       resultPermission.permissions.cameraRoll.status;
 
     if (resultPermissionCamera === "denied")
-      return toastRef.current.show("Gallery permissions must be accepted");
+      return toastRef.current.show(
+        "It is necessary to accept the permissions of the gallery to be able to upload images, if you have rejected it you can go to settings and activate it manually."
+      );
 
     const result = await ImagePicker.launchImageLibraryAsync({
       allowsEditing: true,
