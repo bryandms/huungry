@@ -112,7 +112,7 @@ const UploadImage = ({ toastRef, imagesSelected, setimagesSelected }) => {
     });
 
     if (result.cancelled)
-      return toastRef.current.show("No image has been selected", 2000);
+      return toastRef.current.show("No image has been selected.", 2000);
 
     setimagesSelected([...imagesSelected, result.uri]);
   };
@@ -229,13 +229,13 @@ const AddRestaurantForm = ({ toastRef, setisLoading, navigation }) => {
 
   const addRestaurant = () => {
     if (!name || !address || !description)
-      return toastRef.current.show("All fields are required");
+      return toastRef.current.show("All fields are required.");
 
     if (size(imagesSelected) === 0)
-      return toastRef.current.show("You must select at least one photo");
+      return toastRef.current.show("You must select at least one photo.");
 
     if (!locationRestaurant)
-      return toastRef.current.show("You must select the location");
+      return toastRef.current.show("You must select the location.");
 
     setisLoading(true);
     uploadImageStorage().then((response) => {
@@ -258,7 +258,7 @@ const AddRestaurantForm = ({ toastRef, setisLoading, navigation }) => {
         })
         .catch(() => {
           setisLoading(false);
-          toastRef.current.show("Error creating restaurant, try again");
+          toastRef.current.show("Error creating restaurant, try again.");
         });
     });
   };

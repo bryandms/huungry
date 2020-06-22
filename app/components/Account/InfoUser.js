@@ -28,11 +28,11 @@ const InfoUser = ({
     });
 
     if (result.cancelled)
-      return toastRef.current.show("You have closed the selection of images");
+      return toastRef.current.show("You have closed the selection of images.");
 
     uploadImage(result.uri)
       .then(() => updatePhotoUrl())
-      .catch(() => toastRef.current.show("Error updating avatar"));
+      .catch(() => toastRef.current.show("Error updating avatar."));
   };
 
   const uploadImage = async (uri) => {
@@ -59,7 +59,7 @@ const InfoUser = ({
         setLoading(false);
       })
       .catch(() => {
-        toastRef.current.show("Error updating avatar");
+        toastRef.current.show("Error updating avatar.");
         setLoading(false);
       });
   };

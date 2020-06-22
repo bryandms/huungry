@@ -26,10 +26,10 @@ const LoginForm = ({ toastRef }) => {
 
   const onSubmit = () => {
     if (isEmpty(formData.email) || isEmpty(formData.password))
-      return toastRef.current.show("All fields are required");
+      return toastRef.current.show("All fields are required.");
 
     if (!validateEmail(formData.email))
-      return toastRef.current.show("The email field is not a valid");
+      return toastRef.current.show("The email field is not a valid.");
 
     setLoading(true);
     firebase
@@ -41,7 +41,7 @@ const LoginForm = ({ toastRef }) => {
       })
       .catch(() => {
         setLoading(false);
-        toastRef.current.show("The credentials are incorrect");
+        toastRef.current.show("The credentials are incorrect.");
       });
   };
 

@@ -45,7 +45,6 @@ const Review = ({
 const ListReviews = ({ navigation, idRestaurant }) => {
   const [userLogged, setUserLogged] = useState(false);
   const [reviews, setReviews] = useState([]);
-  console.log(reviews);
 
   firebase
     .auth()

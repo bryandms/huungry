@@ -32,19 +32,19 @@ const RegisterForm = ({ toastRef }) => {
       isEmpty(formData.password) ||
       isEmpty(formData.confirmPassword)
     )
-      return toastRef.current.show("All fields are required");
+      return toastRef.current.show("All fields are required.");
 
     if (!validateEmail(formData.email))
-      return toastRef.current.show("The email field is not a valid");
+      return toastRef.current.show("The email field is not a valid.");
 
     if (formData.password != formData.confirmPassword)
       return toastRef.current.show(
-        "Password confirmation does not match password"
+        "Password confirmation does not match password."
       );
 
     if (size(formData.password) < 6)
       return toastRef.current.show(
-        "The password must be at least 6 characters"
+        "The password must be at least 6 characters."
       );
 
     setLoading(true);
@@ -57,7 +57,7 @@ const RegisterForm = ({ toastRef }) => {
       })
       .catch(() => {
         setLoading(false);
-        toastRef.current.show("The email is already in use");
+        toastRef.current.show("The email is already in use.");
       });
   };
 

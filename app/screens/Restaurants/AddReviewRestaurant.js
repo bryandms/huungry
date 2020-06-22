@@ -18,11 +18,11 @@ const AddReviewRestaurant = ({ navigation, route }) => {
   const toastRef = useRef();
 
   const addReview = () => {
-    if (!rating) return toastRef.current.show("The field rating is required");
+    if (!rating) return toastRef.current.show("The field rating is required.");
 
-    if (!title) return toastRef.current.show("The field title is required");
+    if (!title) return toastRef.current.show("The field title is required.");
 
-    if (!review) return toastRef.current.show("The review title is required");
+    if (!review) return toastRef.current.show("The review title is required.");
 
     setIsLoading(true);
 
@@ -43,7 +43,7 @@ const AddReviewRestaurant = ({ navigation, route }) => {
         udpateRestaurant();
       })
       .catch(() => {
-        toastRef.current.show("Error sending the review");
+        toastRef.current.show("Error sending the review.");
         setIsLoading(false);
       });
   };
