@@ -2,7 +2,7 @@
 
 # Huungry
 
-[Acerca del proyecto](#acerca-del-proyecto) | [Instalar](#instalar)
+[Acerca del proyecto](#acerca-del-proyecto) | [Instalar](#instalar) | [Capturas de pantalla](#capturas-de-pantalla)
 
 [:es:](README-ES.md) | [:us:](README.md)
 
@@ -55,3 +55,40 @@ npm start
 # Yarn
 yarn start
 ```
+
+## Capturas de pantalla
+
+<div style="display: inline-block; margin-right: 20px">
+  <h4>Restaurantes</h4>
+  <img src="./assets/app/restaurants.jpg" alt="Restaurants" style="width: 150px;" />
+</div>
+
+<div style="display: inline-block; margin-right: 20px">
+  <h4>Nuevo restaurante</h4>
+  <img src="./assets/app/new-restaurant.jpg" alt="New restaurant" style="width: 150px;" />
+</div>
+
+<div style="display: inline-block; margin-right: 20px">
+  <h4>Restaurante</h4>
+  <img src="./assets/app/restaurant.jpg" alt="Restaurant" style="width: 150px;" />
+</div>
+
+<div style="display: inline-block; margin-right: 20px">
+  <h4>Mis favoritos</h4>
+  <img src="./assets/app/my-favorites.jpg" alt="My favorites" style="width: 150px;" />
+</div>
+
+<div style="display: inline-block; margin-right: 20px">
+  <h4>Top 5</h4>
+  <img src="./assets/app/top-5.jpg" alt="Top 5" style="width: 150px;" />
+</div>
+
+<div style="display: inline-block; margin-right: 20px">
+  <h4>Buscador</h4>
+  <img src="./assets/app/search.jpg" alt="Search" style="width: 150px;" />
+</div>
+
+<div style="display: inline-block; margin-right: 20px">
+  <h4>Perfil</h4>
+  <img src="./assets/app/profile.jpg" alt="Profile" style="width: 150px;" />
+</div>
