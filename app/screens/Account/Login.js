@@ -36,7 +36,6 @@ const Login = () => {
         <CreateAccount />
       </View>
       <Divider style={styles.divider} />
-      <Text>Social Login</Text>
       <Toast ref={toastRef} position="center" opacity={0.9} />
     </ScrollView>
   );
